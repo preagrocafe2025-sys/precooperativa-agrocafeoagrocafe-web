@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Comfortaa", "Inter", sans-serif;
+
+  /* Artistic Flair Theme Colors */
+  --color-art-bg: var(--color-art-bg);
+  --color-art-brown: var(--color-art-brown);
+  --color-art-green: var(--color-art-green);
+  --color-art-amber: var(--color-art-amber);
+  --color-art-soft: var(--color-art-soft);
+  --color-art-gray: var(--color-art-gray);
+  --color-art-card: var(--color-art-card);
+}
+
+:root {
+  --color-art-bg: #FAF8F5;
+  --color-art-brown: #2C1810;
+  --color-art-green: #2D5A27;
+  --color-art-amber: #8B5E3C;
+  --color-art-soft: #F2E8DF;
+  --color-art-gray: #E6E2DE;
+  --color-art-card: #FFFFFF;
+}
+
+/* Woolamai Theme Override Colors: Deep oceanic teal, electric turquoise and clean minimal elements */
+.theme-woolamai {
+  --color-art-bg: #071F22; /* Deep ocean navy/teal */
+  --color-art-brown: #F3F7F7; /* Pure beach foam soft white */
+  --color-art-green: #2EC4B6; /* Vibrant reef turquoise */
+  --color-art-amber: #00B4D8; /* Ocean waves cyan blue */
+  --color-art-soft: #0A3237; /* Saturated water teal */
+  --color-art-gray: #15454C; /* Soft reef grey-blue */
+  --color-art-card: #0A3237; /* Beautiful deep ocean teal card */
+}
+
+/* Custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth custom scrollbars for drawer and cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 53, 15, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 53, 15, 0.4);
+}
+

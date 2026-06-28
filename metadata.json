@@ -1,0 +1,6 @@
+{
+  "name": "PRECOOPERATIVA AGROCAFE",
+  "description": "Precooperativa cafetera enfocada en el acopio, comercialización mayorista de materias primas agrícolas y suministro de café verde premium de especialidad sin tostar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
