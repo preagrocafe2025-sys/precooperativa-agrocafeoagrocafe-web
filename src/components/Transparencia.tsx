@@ -899,7 +899,7 @@ export const Transparencia: React.FC = () => {
               <span>¿Qué es el Visor PDF Original?</span>
             </div>
             <p className="text-[10px] text-art-brown/80 font-sans leading-relaxed">
-              Es una réplica digital de alta fidelidad de los expedientes físicos originales presentados ante la DIAN y la Superintendencia de Economía Solidaria. Al hacer clic en <strong>"Imprimir / Descargar Oficial"</strong>, podrá ver, guardar e imprimir el documento oficial de forma inmediata.
+              Es una réplica digital de alta fidelidad de los expedientes físicos originales presentados ante la DIAN. Puedes visualizar las páginas principales interactivamente aquí, o bien descargar el archivo <strong>PDF original completo firmado</strong> usando el botón <strong>"Descargar PDF Completo"</strong> del visor.
             </p>
           </div>
 
@@ -969,8 +969,22 @@ export const Transparencia: React.FC = () => {
                 title="Imprimir / Guardar PDF"
               >
                 <Printer className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">Imprimir / Descargar</span>
+                <span className="hidden sm:inline">Imprimir / Guardar</span>
               </button>
+
+              <a
+                href={activeDoc.id === 'estatutos' ? '/estatutos.pdf' : activeDoc.id === 'rut' ? '/rut.pdf' : activeDoc.id === 'acta2026' ? '/acta2026.pdf' : undefined}
+                download
+                target="_blank"
+                rel="noreferrer"
+                className={`flex items-center space-x-1.5 bg-art-brown hover:bg-art-brown/90 text-white px-3 py-1.5 text-[10px] uppercase font-bold tracking-widest transition-colors cursor-pointer ${
+                  !(activeDoc.id === 'estatutos' || activeDoc.id === 'rut' || activeDoc.id === 'acta2026') ? 'hidden' : ''
+                }`}
+                title="Descargar Documento PDF Oficial Completo"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Descargar PDF Completo</span>
+              </a>
             </div>
           </div>
 
