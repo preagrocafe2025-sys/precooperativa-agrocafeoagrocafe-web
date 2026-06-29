@@ -65,7 +65,7 @@ export const AboutUs: React.FC = () => {
                 </div>
                 <h4 className="font-serif font-black italic text-base text-art-brown">Acopio Técnico</h4>
                 <p className="text-xs text-art-brown/85 leading-relaxed font-sans">
-                  Estricto análisis físico y control de humedad (10-12%) para preservar el potencial de calidad del grano verde.
+                  Estricto análisis físico y control de humedad (10-12%) para preservar el potencial de calidad del grano pergamino.
                 </p>
               </div>
             </div>
@@ -87,10 +87,10 @@ export const AboutUs: React.FC = () => {
                 Somos una precooperativa cafetera enfocada en el acopio, comercialización mayorista y fortalecimiento del tejido social de las familias productoras rurales en Colombia, con especial arraigo en Planadas, Tolima.
               </p>
               <p>
-                Nuestra especialidad es el suministro de café verde (almendra) de alta calidad física y sensorial, así como materias primas agrícolas seleccionadas técnicamente para satisfacer mercados exigentes de tueste y exportación directa.
+                Nuestra especialidad es el suministro de café pergamino seco de alta calidad física y sensorial, así como materias primas agrícolas seleccionadas técnicamente para satisfacer mercados exigentes de tueste y distribución directa.
               </p>
               <p className="font-serif italic text-art-green border-l-2 border-art-green pl-4 py-1 font-bold text-lg">
-                "Nos dedicamos a la gestión, acopio y comercialización de café verde, garantizando la equidad en cada eslabón y el desarrollo integral del campo."
+                "Nos dedicamos a la gestión, acopio y comercialización de café pergamino, garantizando la equidad en cada eslabón y el desarrollo integral del campo."
               </p>
             </div>
 
@@ -108,7 +108,7 @@ export const AboutUs: React.FC = () => {
               <div className="h-10 w-px bg-art-brown/10 hidden sm:block" />
               <div className="flex flex-col">
                 <span className="font-serif font-black text-3xl text-art-brown">Sostenible</span>
-                <span className="text-[10px] text-art-brown/70 uppercase tracking-wider font-bold">100% Café Verde</span>
+                <span className="text-[10px] text-art-brown/70 uppercase tracking-wider font-bold">100% Café Pergamino</span>
               </div>
             </div>
 

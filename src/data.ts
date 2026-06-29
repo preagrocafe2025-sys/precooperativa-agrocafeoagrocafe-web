@@ -36,7 +36,7 @@ export const CERTIFICATIONS = [
 export const PRODUCTS: Product[] = [
   {
     id: 'tolima-excelso',
-    name: 'Café Verde Excelso - Planadas',
+    name: 'Café Pergamino Excelso - Planadas',
     origin: 'Tolima, Planadas (1,850 msnm)',
     variety: 'Castillo / Colombia',
     altitude: '1,850m',
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'huila-supremo',
-    name: 'Café Verde Supremo - Pitalito',
+    name: 'Café Pergamino Supremo - Pitalito',
     origin: 'Huila, Pitalito (1,750 msnm)',
     variety: 'Caturra',
     altitude: '1,750m',
@@ -66,7 +66,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'sierra-nevada-verde',
-    name: 'Café Verde - Sierra Nevada Orgánico',
+    name: 'Café Pergamino - Sierra Nevada Orgánico',
     origin: 'Sierra Nevada de Santa Marta (1,600 msnm)',
     variety: 'Borbón',
     altitude: '1,600m',
@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'tolima-natural-verde',
-    name: 'Café Verde - Proceso Natural Anaeróbico',
+    name: 'Café Pergamino - Proceso Natural Anaeróbico',
     origin: 'Tolima, Planadas (1,900 msnm)',
     variety: 'Borbón Rosado',
     altitude: '1,900m',
@@ -99,8 +99,8 @@ export const PRODUCTS: Product[] = [
 export const BRAND_ATTRIBUTES = [
   {
     id: 'attr-arabica',
-    title: 'Café Verde 100% Arábica',
-    description: 'Granos rigurosamente seleccionados y clasificados por tamaño y densidad, listos para ser tostados por profesionales o industrias.',
+    title: 'Café Pergamino 100% Arábica',
+    description: 'Granos rigurosamente seleccionados y clasificados por tamaño y humedad, listos para su trilla y posterior tostión por profesionales.',
     icon: 'Coffee'
   },
   {
@@ -112,7 +112,7 @@ export const BRAND_ATTRIBUTES = [
   {
     id: 'attr-fresh',
     title: 'Control Técnico de Humedad',
-    description: 'Mantenemos un estricto rango del 10% al 12% de humedad en nuestras bodegas de acopio para garantizar la conservación perfecta del grano verde.',
+    description: 'Mantenemos un estricto rango del 10% al 12% de humedad en nuestras bodegas de acopio para garantizar la conservación perfecta del grano pergamino.',
     icon: 'Flame'
   },
   {
@@ -125,8 +125,8 @@ export const BRAND_ATTRIBUTES = [
 
 export const FAQS = [
   {
-    question: '¿Por qué venden café verde y no café tostado?',
-    answer: 'Como Precooperativa Agropecuaria, nos especializamos en el acopio, la gestión de calidad y la comercialización al por mayor del café en su estado verde (almendra) y materias primas agrícolas (Actividad DIAN 4620). No realizamos procesos de tostión, permitiendo a tostadores y exportadores dar su propio perfil al grano.'
+    question: '¿Por qué venden café pergamino seco y no café tostado?',
+    answer: 'Como Precooperativa Agropecuaria, nos especializamos en el acopio, la gestión de calidad y la comercialización al por mayor del café en su estado pergamino seco (Actividad DIAN 4620). No realizamos procesos de tostión, permitiendo a trilladores, tostadores y exportadores realizar su propio proceso y dar su propio perfil al grano.'
   },
   {
     question: '¿Cuáles son las presentaciones y empaques de despacho disponibles?',
@@ -134,6 +134,6 @@ export const FAQS = [
   },
   {
     question: '¿Cómo funciona la suscripción mensual de acopio?',
-    answer: 'Eliges el tipo de café verde especial, la cantidad requerida para tu negocio (en sacos o bolsas de gran volumen) y la frecuencia de despacho mensual. Obtienes precios preferenciales de asociado con un 15% de descuento fijo y prioridad en el abastecimiento.'
+    answer: 'Eliges el tipo de café pergamino especial, la cantidad requerida para tu negocio (en sacos o bolsas de gran volumen) y la frecuencia de despacho mensual. Obtienes precios preferenciales de asociado con un 15% de descuento fijo y prioridad en el abastecimiento.'
   }
 ];

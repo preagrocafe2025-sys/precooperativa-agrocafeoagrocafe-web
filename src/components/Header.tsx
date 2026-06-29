@@ -31,8 +31,9 @@ export const Header: React.FC = () => {
   const navLinks = [
     { name: 'Inicio', tab: 'inicio' },
     { name: 'Misión y Visión', tab: 'nosotros' },
-    { name: 'Catálogo Verde', tab: 'tienda' },
-    { name: 'Plan de Suministro', tab: 'suscripcion' }
+    { name: 'Catálogo Pergamino', tab: 'tienda' },
+    { name: 'Plan de Suministro', tab: 'suscripcion' },
+    { name: 'Transparencia RTE', tab: 'transparencia' }
   ];
 
   const handleTabClick = (tab: string, e: React.MouseEvent) => {

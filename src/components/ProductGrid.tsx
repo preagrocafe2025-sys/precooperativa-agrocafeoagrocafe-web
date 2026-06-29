@@ -35,13 +35,13 @@ export const ProductGrid: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center space-x-1.5 text-xs text-art-green font-sans font-bold uppercase tracking-widest bg-art-green/10 px-4 py-2 border border-art-green/15">
             <Sparkles className="w-3 h-3" />
-            <span>Café Verde de Especialidad</span>
+            <span>Café Pergamino de Especialidad</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black italic text-art-brown">
-            Catálogo de Café Verde
+            Catálogo de Café Pergamino
           </h2>
           <p className="text-art-brown/80 font-sans font-medium text-base sm:text-lg">
-            Suministro premium de café verde (almendra) sin tostar, seleccionado rigurosamente bajo estándares de comercio justo y cooperativismo.
+            Suministro premium de café pergamino seco, seleccionado rigurosamente bajo estándares de comercio justo y cooperativismo.
           </p>
         </div>
 

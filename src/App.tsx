@@ -10,6 +10,7 @@ import { ProductGrid } from './components/ProductGrid';
 import { AboutUs } from './components/AboutUs';
 import { Attributes } from './components/Attributes';
 import { SubscriptionBuilder } from './components/SubscriptionBuilder';
+import { Transparencia } from './components/Transparencia';
 import { CartDrawer } from './components/CartDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
 import { Footer } from './components/Footer';
@@ -46,6 +47,12 @@ function MainLayout() {
         {activeTab === 'suscripcion' && (
           <div className="pt-12">
             <SubscriptionBuilder />
+          </div>
+        )}
+        
+        {activeTab === 'transparencia' && (
+          <div className="pt-12">
+            <Transparencia />
           </div>
         )}
       </main>

@@ -13,12 +13,12 @@ export const SubscriptionBuilder: React.FC = () => {
   const { triggerCheckout } = useApp();
 
   // Subscription states
-  const [coffeeType, setCoffeeType] = useState('Mezcla de Café Verde Excelso');
+  const [coffeeType, setCoffeeType] = useState('Mezcla de Café Pergamino Excelso');
   const [frequency, setFrequency] = useState<'quincenal' | 'mensual' | 'bimestral'>('mensual');
   const [quantity, setQuantity] = useState<string>('Bolsa 5kg');
   const [grind, setGrind] = useState<GrindType>('Bolsa 5kg');
 
-  // Static pricing rules for wholesale green coffee
+  // Static pricing rules for wholesale parchment coffee
   const basePrices: Record<string, number> = {
     'Bolsa 5kg': 115000,
     'Saco 24kg': 499000,
@@ -53,10 +53,10 @@ export const SubscriptionBuilder: React.FC = () => {
   };
 
   const coffeeOptions = [
-    'Mezcla de Café Verde Excelso',
-    'Café Verde Supremo - Especial Caturra',
-    'Café Verde - Sierra Nevada Orgánico',
-    'Café Verde - Proceso Natural Anaeróbico'
+    'Mezcla de Café Pergamino Excelso',
+    'Café Pergamino Supremo - Especial Caturra',
+    'Café Pergamino - Sierra Nevada Orgánico',
+    'Café Pergamino - Proceso Natural Anaeróbico'
   ];
 
   const frequencies = [
@@ -89,10 +89,10 @@ export const SubscriptionBuilder: React.FC = () => {
             <span>Club de Acopio PRECOOPERATIVA AGROCAFE</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black italic text-art-brown leading-none">
-            Programa de Suministro Mensual de Café Verde
+            Programa de Suministro Mensual de Café Pergamino
           </h2>
           <p className="text-art-brown/80 font-sans font-medium text-base sm:text-lg">
-            Asegura el suministro constante de granos verdes premium sin tostar directo de la central de acopio con condiciones preferenciales para asociados y aliados.
+            Asegura el suministro constante de grano pergamino seco premium directo de la central de acopio con condiciones preferenciales para asociados y aliados.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export const SubscriptionBuilder: React.FC = () => {
             {/* 1. Variety Choice */}
             <div className="space-y-3">
               <span className="text-[10px] font-black text-art-green uppercase tracking-widest block">
-                1. Selecciona la Variedad de Café Verde
+                1. Selecciona la Variedad de Café Pergamino
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {coffeeOptions.map((option) => (
@@ -219,7 +219,7 @@ export const SubscriptionBuilder: React.FC = () => {
               <ul className="space-y-3 text-sm text-art-brown font-sans font-semibold">
                 <li className="flex items-start space-x-2">
                   <CheckCircle className="w-4 h-4 text-art-green mt-0.5 shrink-0" />
-                  <span>Grano Verde: <strong className="text-art-brown font-black">{coffeeType}</strong></span>
+                  <span>Grano Pergamino: <strong className="text-art-brown font-black">{coffeeType}</strong></span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <CheckCircle className="w-4 h-4 text-art-green mt-0.5 shrink-0" />

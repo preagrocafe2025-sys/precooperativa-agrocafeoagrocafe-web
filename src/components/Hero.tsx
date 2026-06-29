@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=2000&q=80"
-            alt="Finca marina y de café verde premium de especialidad"
+            alt="Finca marina y de café pergamino premium de especialidad"
             className="w-full h-full object-cover object-center opacity-40 mix-blend-luminosity scale-105"
             referrerPolicy="no-referrer"
           />
@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 1.2, delay: 0.4 }}
               className="max-w-2xl mx-auto text-sm sm:text-base text-white/70 font-sans font-light tracking-[0.15em] leading-relaxed lowercase"
             >
-              suministro de café verde premium de especialidad sin tostar directo de origen
+              suministro de café pergamino premium de especialidad seco directo de origen
             </motion.p>
           </div>
 
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
               onClick={() => setActiveTab('tienda')}
               className="px-8 py-3.5 border border-white/20 bg-white/5 hover:bg-white/10 active:bg-white text-white rounded-none uppercase transition-all duration-300 cursor-pointer"
             >
-              catálogo verde
+              catálogo pergamino
             </button>
             <button
               onClick={() => setActiveTab('suscripcion')}
@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={HERO_IMAGE}
-          alt="Granos de café de origen y verdes de especialidad"
+          alt="Granos de café de origen y pergaminos de especialidad"
           className="w-full h-full object-cover object-center opacity-20 mix-blend-multiply"
           referrerPolicy="no-referrer"
         />
@@ -127,7 +127,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.7, delay: 0.1 }}
                 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight text-art-brown leading-none"
               >
-                El mejor café verde, <br />
+                El mejor café pergamino, <br />
                 <span className="text-art-green italic">
                   de origen seleccionado
                 </span>
@@ -139,7 +139,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="max-w-xl mx-auto lg:mx-0 text-base sm:text-lg text-art-brown/80 font-sans font-medium leading-relaxed"
               >
-                Acopio, gestión integral de calidad y comercialización al por mayor de materias primas agrícolas y café verde de alta especialidad (Actividad DIAN 4620). Apoyando de forma justa a nuestras familias caficultoras.
+                Acopio, gestión integral de calidad y comercialización al por mayor de materias primas agrícolas y café pergamino de alta especialidad (Actividad DIAN 4620). Apoyando de forma justa a nuestras familias caficultoras.
               </motion.p>
             </div>
 
@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
                 onClick={() => setActiveTab('tienda')}
                 className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-art-brown hover:bg-art-brown/90 text-white px-8 py-4 rounded-none font-sans uppercase text-xs tracking-widest font-bold transition-all duration-200 shadow-sm group cursor-pointer"
               >
-                <span>Ver Catálogo Verde</span>
+                <span>Ver Catálogo Pergamino</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
@@ -211,9 +211,9 @@ export const Hero: React.FC = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <h3 className="font-serif text-2xl font-black italic text-art-brown">Grano Verde Especial</h3>
+                  <h3 className="font-serif text-2xl font-black italic text-art-brown">Grano Pergamino Especial</h3>
                   <p className="text-sm text-art-brown/80 font-sans font-medium leading-relaxed">
-                    Cada lote de café verde es evaluado físicamente y catado, superando los 85 puntos en la escala SCA.
+                    Cada lote de café pergamino es evaluado físicamente y catado, garantizando una excelente taza con altos estándares.
                   </p>
                 </div>
 

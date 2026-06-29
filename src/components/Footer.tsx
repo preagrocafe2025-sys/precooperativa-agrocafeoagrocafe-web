@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
             </div>
             
             <p className="text-xs leading-relaxed text-art-brown/85 font-sans font-medium">
-              Organización de economía solidaria para la gestión, acopio y comercialización al por mayor de materias primas agrícolas y café verde de especialidad (Actividad DIAN 4620).
+              Organización de economía solidaria para la gestión, acopio y comercialización al por mayor de materias primas agrícolas y café pergamino de especialidad (Actividad DIAN 4620).
             </p>
 
             {/* Social Icons */}
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
                   onClick={(e) => handleFooterTabClick('tienda', e)}
                   className="hover:text-art-green transition-colors cursor-pointer bg-transparent border-none p-0 text-left font-sans uppercase tracking-widest text-[10px]"
                 >
-                  Catálogo Verde
+                  Catálogo Pergamino
                 </button>
               </li>
               <li>
@@ -99,6 +99,14 @@ export const Footer: React.FC = () => {
                   className="hover:text-art-green transition-colors cursor-pointer bg-transparent border-none p-0 text-left font-sans uppercase tracking-widest text-[10px]"
                 >
                   Plan de Suministro
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={(e) => handleFooterTabClick('transparencia', e)}
+                  className="hover:text-art-green transition-colors cursor-pointer bg-transparent border-none p-0 text-left font-sans uppercase tracking-widest text-[10px]"
+                >
+                  Transparencia RTE
                 </button>
               </li>
             </ul>
@@ -111,7 +119,7 @@ export const Footer: React.FC = () => {
               <div className="flex items-start space-x-2">
                 <ShieldCheck className="w-4.5 h-4.5 text-art-green shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
-                  <strong className="text-art-brown font-bold">Garantía de Calidad Verde:</strong> Granos seleccionados con humedad técnica (10-12%) y clasificación física de mallas.
+                  <strong className="text-art-brown font-bold">Garantía de Calidad Pergamino:</strong> Granos seleccionados con humedad técnica (10-12%) y un excelente secado al sol.
                 </p>
               </div>
               <div className="flex items-start space-x-2">
