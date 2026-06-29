@@ -141,11 +141,11 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-art-green" />
-                <span>+57 300 123 4567</span>
+                <span>+57 314 811 8616</span>
               </li>
               <li className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-art-green shrink-0 mt-0.5" />
-                <span>Planadas, Tolima / Bogotá, Colombia</span>
+                <span>Vereda Mirador, Finca El Cedral, Planadas, Tolima</span>
               </li>
             </ul>
           </div>

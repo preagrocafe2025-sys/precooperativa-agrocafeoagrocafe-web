@@ -23,14 +23,81 @@ interface AppContextType {
   setStyleTheme: (theme: 'classic' | 'woolamai') => void;
 }
 
+const getInitialTab = (): string => {
+  if (typeof window === 'undefined') return 'inicio';
+  
+  let path = '';
+  try {
+    path = decodeURIComponent(window.location.pathname).toLowerCase();
+  } catch (e) {
+    path = window.location.pathname.toLowerCase();
+  }
+  
+  const hash = window.location.hash.toLowerCase();
+  const searchParams = new URLSearchParams(window.location.search);
+  const queryTab = searchParams.get('tab')?.toLowerCase();
+
+  // Check pathnames
+  if (
+    path === '/transparencia rte' || 
+    path === '/transparencia-rte' || 
+    path === '/transparencia_rte' || 
+    path === '/transparencia' ||
+    path.includes('transparencia') ||
+    path.includes('rte')
+  ) {
+    return 'transparencia';
+  }
+  if (path === '/tienda' || path === '/catalogo') return 'tienda';
+  if (path === '/nosotros' || path === '/mision' || path === '/vision') return 'nosotros';
+  if (path === '/suscripcion' || path === '/suministro') return 'suscripcion';
+  if (path === '/inicio' || path === '/') return 'inicio';
+
+  // Check hash
+  if (hash.includes('transparencia') || hash.includes('rte')) return 'transparencia';
+  if (hash.includes('tienda') || hash.includes('catalogo')) return 'tienda';
+  if (hash.includes('nosotros')) return 'nosotros';
+  if (hash.includes('suscripcion')) return 'suscripcion';
+
+  // Check query params
+  if (queryTab === 'transparencia' || queryTab === 'rte') return 'transparencia';
+  if (queryTab === 'tienda') return 'tienda';
+  if (queryTab === 'nosotros') return 'nosotros';
+  if (queryTab === 'suscripcion') return 'suscripcion';
+
+  return 'inicio';
+};
+
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setCartOpen] = useState(false);
   const [checkoutTarget, setCheckoutTarget] = useState<'cart' | SubscriptionConfig | Product | null>(null);
-  const [activeTab, setActiveTab] = useState<string>('inicio');
+  const [activeTab, setActiveTabState] = useState<string>(getInitialTab);
   const [styleTheme, setStyleThemeState] = useState<'classic' | 'woolamai'>('classic');
+
+  const setActiveTab = (tab: string) => {
+    setActiveTabState(tab);
+    if (typeof window !== 'undefined') {
+      let newPath = '/';
+      if (tab === 'transparencia') {
+        newPath = '/Transparencia RTE';
+      } else if (tab !== 'inicio') {
+        newPath = `/${tab}`;
+      }
+      window.history.pushState(null, '', newPath);
+    }
+  };
+
+  // Sync tab with back/forward navigation
+  useEffect(() => {
+    const handlePopState = () => {
+      setActiveTabState(getInitialTab());
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const setStyleTheme = (theme: 'classic' | 'woolamai') => {
     setStyleThemeState('classic');
